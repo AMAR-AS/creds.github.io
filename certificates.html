@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Amarjith Credentials</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#eceef3;--bg2:#e1e4ec;--ink:#10131c;--mute:#555c70;--line:#c6cad7;
+  --gold:#a8610a;--gold-soft:rgba(168,97,10,.12);
+  --f-display:"Syne","Arial Black",system-ui,sans-serif;
+  --f-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gutter-l:max(16px,env(safe-area-inset-left,0px));
+  --gutter-r:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a0c13;--bg2:#10131d;--ink:#ece9e1;--mute:#98a0b4;--line:#242a3a;--gold:#f0b24a;--gold-soft:rgba(240,178,74,.12);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a0c13;--bg2:#10131d;--ink:#ece9e1;--mute:#98a0b4;--line:#242a3a;--gold:#f0b24a;--gold-soft:rgba(240,178,74,.12);color-scheme:dark}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+h1,h2,h3{font-family:var(--f-display);line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.02em}
+h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.04em}
+h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0;max-width:62ch}
+.mono{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.04em;color:var(--mute)}
+.mute{color:var(--mute)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.brand{font-family:var(--f-display);font-weight:800;font-size:1.1rem;text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--gold-soft)}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 13px;border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--mute);white-space:nowrap}
+nav a:hover,nav a[aria-current="page"]{color:var(--ink);background:var(--gold-soft)}
+.tools{display:flex;gap:8px}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem}
+.icon-btn:hover{border-color:var(--gold)}
+#menuBtn{display:none}
+@media (max-width:760px){
+  #menuBtn{display:grid}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:8px var(--gutter-r) 16px var(--gutter-l);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column}
+  nav a{padding:12px}
+}
+.phead{padding-block:clamp(48px,8vw,96px) clamp(28px,4vw,48px)}
+.phead .mono{display:block;margin-bottom:18px}
+.phead p.lede{margin-top:22px;font-size:1.12rem;color:var(--mute)}
+.phead .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:700;font-size:.93rem;cursor:pointer;background:transparent;color:var(--ink);font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{border-color:var(--gold);background:var(--gold);color:#14100a}
+.tag{font-family:var(--f-mono);font-size:.7rem;padding:4px 10px;border-radius:999px;background:var(--gold-soft);color:var(--gold);white-space:nowrap}
+.tag.plain{background:transparent;border:1px solid var(--line);color:var(--mute)}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.f{padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer;font:inherit;font-size:.88rem;font-weight:500}
+.f[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.f small{font-family:var(--f-mono);margin-left:6px;opacity:.7}
+.search{flex:1 1 240px;min-width:0;padding:11px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg2);color:var(--ink);font:inherit;font-size:.92rem}
+.search::placeholder{color:var(--mute)}
+.stack{display:flex;flex-wrap:wrap;gap:4px 14px}
+.stack span{font-family:var(--f-mono);font-size:.74rem;color:var(--mute)}
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.links a{font-weight:700;font-size:.92rem;text-decoration:none;border-bottom:1.5px solid var(--gold)}
+footer.bot{border-top:1px solid var(--line);padding-block:28px;margin-top:clamp(56px,8vw,100px)}
+footer.bot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:all .3s;z-index:80}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.sumline{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:26px;font-weight:700}
+.sumline span{color:var(--mute);font-weight:400}
+.tlbox{border:1px solid var(--line);border-radius:20px;background:var(--bg2);padding:20px 20px 14px;overflow-x:auto}
+.tl{display:flex;gap:2px;min-width:640px;align-items:flex-end;height:150px}
+.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:5px;height:100%;border-bottom:2px solid var(--line);position:relative;padding-bottom:6px}
+.col label{position:absolute;top:100%;margin-top:6px;font-family:var(--f-mono);font-size:.66rem;color:var(--mute);white-space:nowrap}
+.col label.yr{color:var(--ink);font-weight:500}
+.dot{width:16px;height:16px;border-radius:50%;border:0;padding:0;cursor:pointer;background:var(--gold);transition:transform .15s}
+.dot:hover{transform:scale(1.35)}
+.dot.skill{background:var(--ink)}
+.dot.role{background:var(--bg2);border:3px solid var(--ink)}
+.dot.workshop{border-radius:3px;transform:rotate(45deg);width:13px;height:13px;background:var(--mute)}
+.dot.workshop:hover{transform:rotate(45deg) scale(1.35)}
+.dot.award{width:20px;height:20px;background:var(--bg2);border:3px solid var(--gold)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin:34px 0 0;font-size:.82rem;color:var(--mute)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:8px;vertical-align:-1px;background:var(--gold)}
+.legend i.skill{background:var(--ink)}
+.legend i.role{background:var(--bg2);border:3px solid var(--ink);width:13px;height:13px}
+.legend i.workshop{border-radius:2px;transform:rotate(45deg);background:var(--mute)}
+.legend i.award{background:var(--bg2);border:3px solid var(--gold);width:13px;height:13px}
+.ctl{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:44px 0 8px}
+.yearh{display:flex;align-items:baseline;gap:16px;margin:46px 0 18px}
+.yearh::after{content:"";flex:1;height:1px;background:var(--line)}
+.yearh span{font-family:var(--f-mono);font-size:.8rem;color:var(--mute)}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cert{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg2);display:flex;flex-direction:column;gap:10px;transition:border-color .2s;min-width:0}
+.cert:hover{border-color:var(--gold)}
+.cert.award{border-color:var(--gold)}
+.cert.flash{animation:flash 1.4s}
+@keyframes flash{0%,60%{box-shadow:0 0 0 4px var(--gold)}100%{box-shadow:0 0 0 0 transparent}}
+.cert .top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cert h3{font-size:1.08rem;line-height:1.25}
+.cert .by{color:var(--mute);font-size:.92rem}
+.idrow{display:flex;gap:8px;align-items:center;min-width:0;margin-top:auto}
+.idrow code{font-family:var(--f-mono);font-size:.72rem;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;border:1px dashed var(--line);border-radius:8px;padding:4px 9px}
+.cp{font:inherit;font-size:.78rem;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer;flex:none}
+.cp:hover{border-color:var(--gold)}
+.cert .links{margin-top:4px}
+.none{padding:40px 0;color:var(--mute)}
+.note{margin-top:42px;padding-top:18px;border-top:1px solid var(--line);font-size:.86rem;color:var(--mute);max-width:80ch}
+@media (max-width:900px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:580px){.cgrid{grid-template-columns:1fr}}
+</style>
+</head><body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html" aria-label="Amarjith Singh K, home"><i></i>Amarjith Singh K</a>
+  <nav id="nav" aria-label="Pages"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" %%>Projects</a></li>
+    <li><a href="github.html" %%>GitHub</a></li>
+    <li><a href="certificates.html" %aria-current="page"%>Certificates</a></li>
+  </ul></nav>
+  <div class="tools">
+    <button class="icon-btn" id="theme" aria-label="Switch colour theme" title="Switch theme">◐</button>
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</div></header>
+
+<main>
+<section class="phead"><div class="wrap">
+  <span class="mono">CERTIFICATES AND ACHIEVEMENTS</span>
+  <h1>Credentials.</h1>
+  <p class="lede">Course completions, skills tests, a workshop and a university prize, newest first. Credential IDs are copyable, and each card links to the issuing page where a direct link exists.</p>
+  <div class="sumline" id="sum"></div>
+  <div class="row"><a class="btn" href="https://www.linkedin.com/in/amarjith-singh-kalidasan" target="_blank" rel="noopener">View LinkedIn profile ↗</a></div>
+</div></section>
+<section><div class="wrap">
+  <div class="tlbox" aria-label="Timeline of credentials"><div class="tl" id="tl"></div></div>
+  <div class="legend" id="legend"></div>
+  <div class="ctl">
+    <input class="search" id="q" type="search" placeholder="Search title, issuer or ID" aria-label="Search credentials">
+    <button class="f" id="sort" aria-label="Change sort order">Newest first</button>
+  </div>
+  <div class="filters" id="types" role="group" aria-label="Filter by type"></div>
+  <div id="list"></div>
+  <p class="note">“View certificate” opens a credential page where a direct verification link was available. “View listing” opens the certifications section of the LinkedIn profile, because a direct share link was not available for that item.</p>
+</div></section>
+</main>
+
+<footer class="bot"><div class="wrap"><span class="mono">© 2026 Amarjith Singh K</span><a class="mono" href="index.html">Back to the role map</a></div></footer>
+<div id="toast" role="status"></div>
+<script>
+function $(s,r){return (r||document).querySelector(s)}
+function el(t,a,h){var e=document.createElement(t);for(var k in (a||{}))e.setAttribute(k,a[k]);if(h!=null)e.innerHTML=h;return e}
+function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove("show")},1800)}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+(function(){
+  var r=document.documentElement;
+  try{var s=localStorage.getItem("theme");if(s)r.setAttribute("data-theme",s)}catch(e){}
+  $("#theme").onclick=function(){
+    var dark=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+    var n=dark?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}
+  };
+  var nav=$("#nav"),b=$("#menuBtn");
+  b.onclick=function(){var o=nav.classList.toggle("open");b.setAttribute("aria-expanded",o)};
+})();
+</script>
+<script>
+
+var LI="https://www.linkedin.com/in/amarjith-singh-kalidasan/details/certifications/";
+var KIND={course:"Course completion",skill:"Skills certificate",role:"Role certification test",workshop:"Participation",award:"Second prize"};
+var C=[
+ {t:"What is Data Science?",by:"IBM · Coursera",id:"292BGRM45PO8",d:"2026-07",k:"course",u:LI,ul:"View listing"},
+ {t:"AI Fluency Framework & Foundations",by:"Anthropic",id:"ar5zzjotuidf",d:"2026-07",k:"course",u:LI,ul:"View listing"},
+ {t:"Build a computer vision app with Azure Cognitive Services",by:"Microsoft",id:"K1X9G2EUJ826",d:"2026-06",k:"course",u:LI,ul:"View listing"},
+ {t:"Software Engineer Intern",by:"HackerRank · Problem solving and SQL",id:"3cbaf934860f",d:"2026-08",k:"role",u:"https://www.hackerrank.com/certificates/3cbaf934860f",ul:"View certificate"},
+ {t:"Java (Basic)",by:"HackerRank",id:"4b5d4981ab95",d:"2026-06",k:"skill",u:"https://www.hackerrank.com/certificates/4b5d4981ab95",ul:"View certificate"},
+ {t:"Problem Solving (Intermediate)",by:"HackerRank",id:"",d:"2026-03",k:"skill",u:LI,ul:"View listing"},
+ {t:"Angular (Intermediate)",by:"HackerRank",id:"438c4879a311",d:"2026-03",k:"skill",u:"https://www.hackerrank.com/certificates/438c4879a311",ul:"View certificate"},
+ {t:"Angular (Basic)",by:"HackerRank",id:"628F400831F4",d:"2026-03",k:"skill",u:"https://www.hackerrank.com/certificates/628F400831F4",ul:"View certificate"},
+ {t:"Master JavaScript, HTML, and CSS with 30 Projects in 30 Days",by:"Udemy",id:"UC-4b0c0be9-817d-4243-b938-a50d486d94aa",d:"2025-08",k:"course",u:"https://www.udemy.com/certificate/UC-4b0c0be9-817d-4243-b938-a50d486d94aa/",ul:"View certificate"},
+ {t:"Quantum Enigmas",by:"IBM",id:"4f5acab0-f91e-446d-b404-65aec0804cd4",d:"2025-06",k:"course",u:LI,ul:"View listing"},
+ {t:"Getting Started with Data",by:"IBM",id:"",d:"2025-06",k:"course",u:LI,ul:"View listing"},
+ {t:"Problem Solving",by:"HackerRank",id:"F19ED581D9E5",d:"2024-12",k:"skill",u:"https://www.hackerrank.com/certificates/F19ED581D9E5",ul:"View certificate"},
+ {t:"Python Basic",by:"HackerRank",id:"F12AD5530106",d:"2024-12",k:"skill",u:"https://www.hackerrank.com/certificates/F12AD5530106",ul:"View certificate"},
+ {t:"Roadmap to Become Certified Hacker in 2025",by:"HackingFlix · Online workshop",id:"78143392988147",idl:"Verification No.",d:"2025-06-15",k:"workshop",u:"https://hackingflix.verifyid.ci/",ul:"Open verification page"},
+ {t:"Mobile Application Development Expo",by:"Presidency University Bangalore",id:"",d:"2025-11",k:"award",u:"https://www.linkedin.com/in/amarjith-singh-kalidasan",ul:"View profile"}
+];
+C.forEach(function(c,i){c.n=i});
+var MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmt(d){var p=d.split("-");return (p[2]?+p[2]+" ":"")+MON[+p[1]-1]+" "+p[0]}
+var TYPES=[["all","All"],["course","Courses"],["skills","Skills tests"],["workshop","Workshop"],["award","Achievement"]];
+function inType(c,t){return t==="all"||(t==="skills"?(c.k==="skill"||c.k==="role"):c.k===t)}
+var S={q:"",type:"all",asc:false};
+
+/* summary */
+(function(){
+  var certs=C.filter(function(c){return c.k!=="workshop"&&c.k!=="award"}).length;
+  $("#sum").innerHTML="<div>"+certs+" <span>certificates and course completions</span></div><div>1 <span>workshop participation</span></div><div>1 <span>university achievement</span></div>";
+  $("#legend").innerHTML="<span><i></i>Course</span><span><i class=\"skill\"></i>Skills certificate</span><span><i class=\"role\"></i>Role test</span><span><i class=\"workshop\"></i>Workshop</span><span><i class=\"award\"></i>Prize</span>";
+})();
+
+/* timeline: Dec 2024 to Oct 2026 */
+(function(){
+  var tl=$("#tl"),cols=[],y=2024,m=12;
+  while(y<2026||m<=10){cols.push(y+"-"+(m<10?"0"+m:m));m++;if(m>12){m=1;y++}}
+  cols.forEach(function(key,i){
+    var col=el("div",{class:"col"});
+    C.filter(function(c){return c.d.slice(0,7)===key}).forEach(function(c){
+      var b=el("button",{class:"dot "+c.k,title:c.t+" · "+fmt(c.d),"aria-label":c.t+", "+fmt(c.d)});
+      b.onclick=function(){S.q="";S.type="all";$("#q").value="";draw();var n=document.getElementById("c"+c.n);if(n){n.scrollIntoView({behavior:"smooth",block:"center"});n.classList.remove("flash");void n.offsetWidth;n.classList.add("flash")}};
+      col.appendChild(b);
+    });
+    var mm=+key.slice(5),first=i===0||mm===1;
+    col.appendChild(el("label",{class:first?"yr":""},first?MON[mm-1]+" "+key.slice(2,4):MON[mm-1].charAt(0)));
+    tl.appendChild(col);
+  });
+  $("#tl").parentNode.style.paddingBottom="34px";
+})();
+
+/* filters */
+(function(){
+  var f=$("#types");
+  TYPES.forEach(function(t){
+    var n=C.filter(function(c){return inType(c,t[0])}).length;
+    var b=el("button",{class:"f","aria-pressed":t[0]==="all","data-t":t[0]},t[1]+"<small>"+n+"</small>");
+    b.onclick=function(){S.type=t[0];draw()};f.appendChild(b);
+  });
+  $("#q").addEventListener("input",function(e){S.q=e.target.value.toLowerCase();draw()});
+  $("#sort").onclick=function(){S.asc=!S.asc;this.textContent=S.asc?"Oldest first":"Newest first";draw()};
+})();
+
+function cardHTML(c){
+  var idl=c.idl||"Credential ID";
+  return "<article class=\"cert "+(c.k==="award"?"award":"")+"\" id=\"c"+c.n+"\"><div class=\"top\"><span class=\"tag\">"+KIND[c.k]+"</span><span class=\"mono\">"+fmt(c.d)+"</span></div>"+
+    "<h3>"+esc(c.t)+"</h3><p class=\"by\">"+esc(c.by)+"</p>"+
+    (c.id?"<div class=\"idrow\"><code title=\""+idl+"\">"+esc(c.id)+"</code><button class=\"cp\" data-id=\""+esc(c.id)+"\" aria-label=\"Copy "+idl+"\">Copy</button></div>":"")+
+    "<div class=\"links\"><a href=\""+c.u+"\" target=\"_blank\" rel=\"noopener\">"+c.ul+" ↗</a></div></article>";
+}
+function draw(){
+  [].forEach.call($("#types").children,function(b){b.setAttribute("aria-pressed",b.getAttribute("data-t")===S.type)});
+  var list=C.filter(function(c){
+    if(!inType(c,S.type))return false;
+    if(!S.q)return true;
+    return (c.t+" "+c.by+" "+c.id).toLowerCase().indexOf(S.q)>-1;
+  }).sort(function(a,b){var r=a.d.localeCompare(b.d);return S.asc?r:-r});
+  var out="",yr="",open=false;
+  list.forEach(function(c){
+    var y=c.d.slice(0,4);
+    if(y!==yr){if(open)out+="</div>";yr=y;open=true;
+      out+="<div class=\"yearh\"><h2>"+y+"</h2><span>"+list.filter(function(x){return x.d.slice(0,4)===y}).length+" items</span></div><div class=\"cgrid\">"}
+    out+=cardHTML(c);
+  });
+  if(open)out+="</div>";
+  $("#list").innerHTML=out||"<p class=\"none\">No credential matches. Clear the search or choose All.</p>";
+}
+$("#list").addEventListener("click",function(e){
+  var b=e.target.closest(".cp");if(!b)return;
+  var t=b.getAttribute("data-id");
+  function ok(){toast("ID copied")}
+  function fb(){var c=b.previousElementSibling,r=document.createRange();r.selectNodeContents(c);var s=getSelection();s.removeAllRanges();s.addRange(r);toast("ID selected, press copy")}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else fb();
+});
+draw();
+
+</script>
+</body></html>
